@@ -4,7 +4,7 @@
         "section": "5-minute-series",
         "date": "December 16, 2022",
         "title": "5 Minutes to Setting Up A Blog",
-        "description": "Hi. This is my second post. Hopefully GH actions will run from this. const test = () => \"Hello\" In this post I will teach you how to brew lovely beans. I can't cook. It's 6:40pm and I am still trying to build this. I think I gitignored dist and that is why I am unable to serve the site. 7:06pm new part-2-test.md",
+        "description": "Hi. This is my second post. Hopefully GH actions will run from this. const test = () => \"Hello\" In this post I will teach you how to brew lovely beans. I can't cook. It's 6:40pm and I am still trying to build this. I think I gitignored dist and that is why I am unable to serve the site. 7:06pm new part-2-test.md 7:11...",
         "url": "blog_store/posts/5-minute-series/part-2-test.md"
     },
     {
