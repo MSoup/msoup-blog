@@ -16,3 +16,5 @@ In this post I will teach you how to brew lovely beans.
 I can't cook.
 
 It's 6:40pm and I am still trying to build this. I think I gitignored dist and that is why I am unable to serve the site.
+
+7:06pm new part-2-test.md
