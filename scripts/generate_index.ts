@@ -1,4 +1,4 @@
-import { join, resolve } from'path'
+import { join, resolve } from 'path'
 import removeMarkdown from 'markdown-to-text'
 import { writeFileSync, readdirSync, readFileSync } from 'fs'
 import { PostIndex } from '../src/types/PostIndex'
@@ -8,7 +8,7 @@ const postsPath = join(dataPath, 'posts')
 
 // Get categories
 const categoryFolders = readdirSync(postsPath)
-
+console.log(categoryFolders)
 // Create posts_index object
 const postsIndex: PostIndex[] = []
 
