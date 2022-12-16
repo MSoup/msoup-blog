@@ -1,18 +1,18 @@
 {
-  "name": "vue3-md-blog",
+  "name": "msoup-blog",
   "version": "3.1.9",
-  "description": "Minimal Vue3 + Markdown blog engine",
-  "author": "JQ (https://github.com/yeikiu)",
+  "description": "MSoup's Blog based on Minimal Vue3 + Markdown blog engine",
+  "author": "MSoup (https://github.com/MSoup/msoup-blog)",
   "keywords": [
     "vuejs",
     "markdown",
-    "github"
+    "blog"
   ],
   "license": "CC0-1.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/yeikiu/vue3-md-blog.git"
+    "url": "https://github.com/MSoup/msoup-blog"
   },
   "scripts": {
     "dev": "vite",
