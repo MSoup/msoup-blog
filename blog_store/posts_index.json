@@ -4,7 +4,7 @@
         "section": "5-minute-series",
         "date": "December 16, 2022",
         "title": "5 Minutes to Setting Up A Blog",
-        "description": "Hi. This is my second post. Hopefully GH actions will run from this. const test = () => \"Hello\" `",
+        "description": "Hi. This is my second post. Hopefully GH actions will run from this. const test = () => \"Hello\" In this post I will teach you how to brew lovely beans. I can't cook.",
         "url": "blog_store/posts/5-minute-series/part-2-test.md"
     },
     {

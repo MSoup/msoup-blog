@@ -10,3 +10,7 @@ This is my second post. Hopefully GH actions will run from this.
 const test = () => "Hello"
 
 ```
+
+In this post I will teach you how to brew lovely beans.
+
+I can't cook.
