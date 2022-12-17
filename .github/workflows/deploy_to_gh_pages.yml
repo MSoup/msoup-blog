@@ -7,17 +7,17 @@ jobs:
   sync_badges:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v3
+      # - uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+      # - uses: actions/setup-node@v3
       
-      - run: |
-          rm -rf .ci_badges
-          npx setup-gh-badges
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .ci_badges
-          git commit -m "[CI:deploy] sync_badges job"
+      # - run: |
+      #     rm -rf .ci_badges
+      #     npx setup-gh-badges
+      #     git config --local user.email "action@github.com"
+      #     git config --local user.name "GitHub Action"
+      #     git add .ci_badges
+      #     git commit -m "[CI:deploy] sync_badges job"
 
       - uses: ad-m/github-push-action@master
         with:
