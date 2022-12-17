@@ -1,7 +1,7 @@
 <template>
   <PatchMeta />
   <NavBar
-    :title="'MSoup\'s Tech Blog'"
+    :title="'MSoup\'s Blog'"
     :sections="blogSections"
   />
   <Suspense>
@@ -33,6 +33,7 @@ export default defineComponent({
   },
   setup () {
     const blogSections = inject('blogSections', {})
+
     return { blogSections }
   }
 })

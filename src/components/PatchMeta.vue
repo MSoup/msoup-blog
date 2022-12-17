@@ -6,11 +6,11 @@
 import { onMounted, defineComponent } from 'vue'
 
 const defaultMetas = {
-  siteName: 'vue3-md-blog',
-  title: 'Minimal Vue3 + Markdown blog engine',
-  description: 'Simply fork and deploy!',
+  siteName: 'MSoup\'s Blog',
+  title: 'Aimed at Aspiring Developers',
+  description: 'Sometimes I enjoy talking about my learning',
   previewUrl: 'https://github.com/yeikiu/vue3-md-blog/blob/master/src/assets/logo.png?raw=true',
-  shareUrl: 'https://yeikiu.github.io/vue3-md-blog/#/'
+  shareUrl: 'https://msoup.github.io/msoup-blog/#/'
 }
 
 const patchMeta = ({

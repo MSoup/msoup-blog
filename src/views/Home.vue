@@ -3,14 +3,14 @@
 
   <div :style="`background-color: ${VUE_APP_MAIN_BG_CSS_COLOR}; color: ${VUE_APP_MAIN_TEXT_CSS_COLOR};`">
     <!-- HEADER -->
-    <BlogHeader class="mb-5" />
+    <BlogHeader v-if="!section" class="mb-5" />
 
-    <hr v-if="section">
+    <hr v-if="!section">
     <p
       v-if="section"
       class="text-center display-4 text-capitalize my-5"
     >
-      {{ section }}
+      [ {{ section }} ]
     </p>
 
     <div
