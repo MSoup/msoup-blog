@@ -7,9 +7,9 @@ jobs:
   sync_badges:
     runs-on: ubuntu-18.04
     steps:
-      # - uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      # - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
       
       # - run: |
       #     rm -rf .ci_badges
