@@ -10,7 +10,8 @@
   ],
   "husky": {
     "hooks": {
-        "pre-push": "npx setup-gh-badges"
+        "pre-push": "npx setup-gh-badges",
+        "push": "echo 'pushing...'"
     }
   },
   "license": "CC0-1.0",
