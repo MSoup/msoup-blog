@@ -5,7 +5,7 @@
       class="text-reset"
     >
       <p class="display-3">
-        vue3-md-blog
+        MSoup's Blog
       </p>
       <img
         alt="Vue logo"

@@ -8,7 +8,7 @@
       class="text-reset"
     >
       <p class="m-0 p-0">
-        vue3-md-blog v{{ version }}
+        MSoup's Blog v{{ version }}
       </p>
     </router-link>
     <p class="m-0 p-0">
