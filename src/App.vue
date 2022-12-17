@@ -1,7 +1,7 @@
 <template>
   <PatchMeta />
   <NavBar
-    :title="'📝 vue3-md-blog'"
+    :title="📝 MSoup's Tech Blog"
     :sections="blogSections"
   />
   <Suspense>
