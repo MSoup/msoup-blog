@@ -1,6 +1,6 @@
 {
   "name": "msoup-blog",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "MSoup's Blog based on Minimal Vue3 + Markdown blog engine",
   "author": "MSoup (https://github.com/MSoup/msoup-blog)",
   "keywords": [
