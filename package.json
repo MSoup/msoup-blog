@@ -22,7 +22,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build --base=/msoup-blog/",
+    "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "generate:index": "npx ts-node ./scripts/generate_index.ts",
     "prepare": "husky install"
