@@ -5,11 +5,17 @@ const routes: Array<RouteRecordRaw> = [
     path: '/:section?',
     component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue'),
     props: true
-  }, {
+  }, 
+  {
     path: '/:section/:id',
     component: () => import(/* webpackChunkName: "post" */ '../views/Post.vue'),
     props: true
-  }
+  },
+  {
+    path: '/about',
+    component: () => import(/* webpackChunkName: "post" */ '../views/About.vue'),
+    props: true
+  },
 ]
 
 const router = createRouter({

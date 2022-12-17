@@ -30,6 +30,8 @@
           <router-link class="nav-link" :style="`color: ${VUE_APP_NAVBAR_TEXT_CSS_COLOR};`" :to="'/about'">
             About
           </router-link>
+
+
         </li>
       </ul>
     </div>

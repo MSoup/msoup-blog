@@ -5,6 +5,7 @@ on:
     paths:
       - public/blog_store/posts/**/*
       - public/blog_store/assets/**/*
+      - public/about.md
 
 jobs:
 

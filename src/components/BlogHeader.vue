@@ -5,8 +5,17 @@
       class="text-reset text-decoration-none"
       > 
       <p class="display-4">
-        MSoup's Blog
+        {{headerTitle? headerTitle: `MSoup's Blog`}}
       </p>
     </router-link>
   </div>
 </template>
+
+<script language="ts">
+
+export default {
+  props: {
+    headerTitle: String,
+  }
+}
+</script>

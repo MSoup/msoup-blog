@@ -5,6 +5,7 @@ import axios from 'redaxios'
 import { PostIndex } from './types/PostIndex'
 
 const dataPath = 'blog_store/posts_index.json'
+const aboutMePath = 'blog_store/about.md'
 
 const loadApp = async () => {
   const { data: postsIndex } = await axios.get<PostIndex[]>(dataPath)
@@ -14,6 +15,7 @@ const loadApp = async () => {
     .use(router)
     .provide<PostIndex[]>('postsIndex', postsIndex)
     .provide<Record<string, number>>('blogSections', blogSections)
+    .provide('aboutMe', aboutMePath)
     .mount('#app')
 }
 
