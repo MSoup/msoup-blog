@@ -11,13 +11,6 @@
         MSoup's Blog v{{ version }}
       </p>
     </router-link>
-    <p class="m-0 p-0">
-      Created with ❤️ by <a
-        href="https://github.com/yeikiu/"
-        target="_blank"
-        class="text-reset"
-      >JQ</a> © {{ new Date().toDateString().slice(-4) }}
-    </p>
   </div>
 </template>
 

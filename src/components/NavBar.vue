@@ -30,12 +30,12 @@
       id="navbarNavDropdown"
       :class="`navbar-collapse collapse ${collapseMenu ? '' : 'show'}`"
     >
-      <ul class="ml-auto mr-5 pr-5 navbar-nav">
+      <ul class="ml-auto mr-5 navbar-nav">
         <li :class="`nav-item dropleft dropdown ${showDropdown ? 'show' : ''}`">
           <a
             id="navbarDropdownMenuLink"
             :style="`color: ${VUE_APP_NAVBAR_TEXT_CSS_COLOR};`"
-            class="nav-link dropdown-toggle"
+            class="nav-link dropdown-toggle p-0"
             role="button"
             data-toggle="dropdown"
             aria-haspopup="true"
@@ -46,7 +46,7 @@
           </a>
           <div
             :class="`dropdown-menu ${showDropdown ? 'show' : ''}`"
-            style="max-height: 200px; overflow: scroll;"
+            style="max-height: 200px; padding: 15px; background-color: #E2F0FB; min-width: 400px;"
           >
             <router-link
               v-for="(count, section) of sections"
@@ -65,9 +65,9 @@
 </template>
 
 <script language="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, onMounted } from 'vue'
 
-const { VUE_APP_NAVBAR_BG_CSS_COLOR = 'black', VUE_APP_NAVBAR_TEXT_CSS_COLOR = 'white' } = {}
+const { VUE_APP_NAVBAR_BG_CSS_COLOR = '#002884', VUE_APP_NAVBAR_TEXT_CSS_COLOR = '#E2F0FB' } = {}
 
 export default defineComponent({
   props: {

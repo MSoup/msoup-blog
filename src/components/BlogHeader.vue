@@ -4,13 +4,9 @@
       :to="'/'"
       class="text-reset"
     >
-      <p class="display-3">
+      <p class="display-4">
         MSoup's Blog
       </p>
-      <img
-        alt="Vue logo"
-        src="../assets/logo.png"
-      >
     </router-link>
   </div>
 </template>
