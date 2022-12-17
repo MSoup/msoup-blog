@@ -32,7 +32,10 @@ jobs:
         with:
           ref: gh-pages
 
-      - run: rm -rf ./*
+      - run: |
+          git status
+          rm -rf ./*
+          git status
 
       - uses: actions/download-artifact@v2
         with:
@@ -40,6 +43,8 @@ jobs:
           path: ./
 
       - run: |
+          git status
+          pwd
           ## Uncomment if deploying with custom domain enabled in your repo's GitHub pages settings. Must match your (sub)domain name
           # echo "your.domain.com" > CNAME
           git config --local user.email "posts_hook@github.com"
