@@ -1,7 +1,7 @@
 <template>
   <PatchMeta />
   <NavBar
-    :title="'MSoup\'s Tech Blog'"
+    :title="'MSoup\'s Tech Blog and Ramblings'"
     :sections="blogSections"
   />
   <Suspense>
