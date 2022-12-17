@@ -8,6 +8,11 @@
     "markdown",
     "blog"
   ],
+  "husky": {
+    "hooks": {
+        "pre-push": "npx setup-gh-badges"
+    }
+  },
   "license": "CC0-1.0",
   "private": true,
   "repository": {
@@ -33,6 +38,7 @@
   "devDependencies": {
     "@types/node": "^18.0.3",
     "@vitejs/plugin-vue": "^2.3.3",
+    "husky": "^8.0.2",
     "markdown-to-text": "^0.1.1",
     "moment": "^2.29.4",
     "ts-node": "^10.8.2",
