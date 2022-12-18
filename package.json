@@ -25,7 +25,9 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
     "generate:index": "npx ts-node ./scripts/generate_index.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier .  --write"  
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
@@ -40,6 +42,8 @@
   "devDependencies": {
     "@types/node": "^18.0.3",
     "@vitejs/plugin-vue": "^2.3.3",
+    "eslint": "^8.30.0",
+    "eslint-plugin-vue": "^9.8.0",
     "husky": "^8.0.2",
     "markdown-to-text": "^0.1.1",
     "moment": "^2.29.4",
