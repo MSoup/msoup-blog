@@ -17,8 +17,9 @@
 <script language="ts">
 import { defineComponent } from 'vue'
 import { version } from '../../package.json'
+import blogConfig from '../blog_config'
 
-const { VUE_APP_FOOTER_BG_CSS_COLOR = 'darkgray', VUE_APP_FOOTER_TEXT_CSS_COLOR = 'white' } = {}
+const { VUE_APP_FOOTER_BG_CSS_COLOR, VUE_APP_FOOTER_TEXT_CSS_COLOR = 'white' } = blogConfig
 
 export default defineComponent({
   data () {

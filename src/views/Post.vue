@@ -10,6 +10,7 @@
     </button>
   </div>
 </template>
+
 <script lang='ts'>
 import { defineComponent, inject } from 'vue'
 import { onBeforeRouteUpdate } from 'vue-router'
@@ -61,12 +62,9 @@ export default defineComponent({
 
     // Fetch Post markdown and compile it to html
     const postsIndex: PostIndex[] = inject<PostIndex[]>('postsIndex', [])
-    console.log(postsIndex)
     const { url = '' } = postsIndex.find(({ id }) => id === props.id) || {}
     const { data: markDownSource } = await axios.get(url)
     const postHtml = markDownIt.render(markDownSource)
-    console.log(url)
-    console.log(markDownSource)
     
     // Patch page title
     const [, title] = markDownSource.split('#')

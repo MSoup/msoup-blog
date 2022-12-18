@@ -40,8 +40,9 @@
 
 <script language="ts">
 import { defineComponent, ref, onMounted } from 'vue'
+import blogConfig from "../blog_config"
 
-const { VUE_APP_NAVBAR_BG_CSS_COLOR = '#002884', VUE_APP_NAVBAR_TEXT_CSS_COLOR = '#E2F0FB' } = {}
+const { VUE_APP_NAVBAR_BG_CSS_COLOR, VUE_APP_NAVBAR_TEXT_CSS_COLOR } = blogConfig
 
 export default defineComponent({
   props: {

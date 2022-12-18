@@ -1,10 +1,18 @@
 [
     {
-        "id": "setup-your-own-blog",
+        "id": "part-2-test",
+        "section": "5-minute-series",
+        "date": "December 16, 2022",
+        "title": "5 Minutes to Setting Up A Blog",
+        "description": "Hi. This is my second post. Hopefully GH actions will run from this. const test = () => \"Hello\" In this post I will teach you how to brew lovely beans. I can't cook. It's 6:40pm and I am still trying to build this. I think I gitignored dist and that is why I am unable to serve the site. 7:06pm new part-2-test.md 7:11...",
+        "url": "blog_store/posts/5-minute-series/part-2-test.md"
+    },
+    {
+        "id": "setup-yor-own-blog",
         "section": "guide",
         "date": "February 11, 2020",
         "title": "Setup your own Blog in under 5 minutes",
-        "description": "This tutorial assumes you have the following installed on your system: - An active GitHub account - GIT - NodeJS 1.- Get your own repo Login into your GitHub account and start a new repo. Use vue3-md-blog as a template Public Dir Structure 2.- Configure your src/blog_config.ts file, i.e: VUEAPPPOSTSPERPAGE: 5, VUEAPPMAINBGCSS_COLOR: 'white', VUEAPPMAINTEXTCSS_COLOR: 'black', 3.- Test locally Make sure your terminal is within...",
+        "description": "This tutorial assumes you have the following installed on your system: > - An active GitHub account - GIT - NodeJS 1.- Get your own repo Login into your GitHub account and start a new repo. Use vue3-md-blog as a template Public Dir Structure 2.- Configure your src/blog_config.ts file, i.e: VUEAPPPOSTSPERPAGE: 5, VUEAPPMAINBGCSS_COLOR: 'white', VUEAPPMAINTEXTCSS_COLOR: 'black', 3.- Test locally Make sure your terminal is...",
         "url": "blog_store/posts/guide/setup-yor-own-blog.md"
     },
     {
@@ -28,7 +36,7 @@
         "section": "features",
         "date": "January 20, 2020",
         "title": "Use inline bootstrap-ready html",
-        "description": "Another advantage of runtime template compilation is that we can make good use of bootstrap predefined classes since our app has already loaded all its css. .bg-primary .bg-secondary .bg-success .bg-danger .bg-warning .bg-info .bg-light .bg-dark .bg-white `` Use inline bootstrap-ready html June 26, 2019 Another advantage of runtime template compilation is that we can make good use of bootstrap predefined classes since our app has...",
+        "description": "Another advantage of runtime template compilation is that we can make good use of bootstrap predefined classes since our app has already loaded all its css. .bg-primary .bg-secondary .bg-success .bg-danger .bg-warning .bg-info .bg-light .bg-dark .bg-white Use inline bootstrap-ready html June 26, 2019 Another advantage of runtime template compilation is that we can make good use of bootstrap predefined classes since our app has already...",
         "url": "blog_store/posts/features/inline-bootstrap-html.md"
     },
     {
@@ -36,7 +44,7 @@
         "section": "5-minute-series",
         "date": "January 7, 2020",
         "title": "Introduction to 5 Minutes",
-        "description": "Hi. I have an extremely short attention span, and if you do too, then I may have created a resource that's perfect for you to learn from. All my posts in this series will be 5 minutes, plus or minutes 30 seconds to read. Why? Because that's the limit of my own attention span. Unless it is something I am passionate about (this includes...",
+        "description": "Hi. I have an extremely short attention span, and if you do too, then I may have created a resource that's perfect for you to learn from. Goes to get a coffee All my posts in this series will be 5 minutes, plus or minutes 30 seconds to read. Why? Because that's the limit of my own attention span. Unless it is something I...",
         "url": "blog_store/posts/5-minute-series/introduction-to-5-minute-series.md"
     },
     {
@@ -44,7 +52,7 @@
         "section": "features",
         "date": "January 7, 2020",
         "title": "Posts are compiled with markdown-it",
-        "description": "You can simply edit your markdown files online and your blog will reflect the changes shortly after. Posts are compiled from Markdown to html in runtime Use inline html with bootstrap classes ready to go within your markdowns Support for GitHub Pages CSS and emojis Features Headings ` h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading ` h1 Heading...",
+        "description": "You can simply edit your markdown files online and your blog will reflect the changes shortly after. Posts are compiled from Markdown to html in runtime Use inline html with bootstrap classes ready to go within your markdowns Support for GitHub Pages CSS and emojis Features Headings h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading h1 Heading 8-) h2...",
         "url": "blog_store/posts/features/markdown-posts.md"
     },
     {
