@@ -1,14 +1,11 @@
 <template>
-  <div class="text-center my-5">
-    <router-link
-      :to="'/'"
-      class="text-reset text-decoration-none"
-      > 
-      <p class="display-4">
-        {{headerTitle? headerTitle: `MSoup's Blog`}}
+  <header class="pl-5 my-1 mb-1">
+    <router-link :to="'/'" class="text-reset text-decoration-none">
+      <p>
+        {{ headerTitle ? headerTitle : `MSoup's Blog` }}
       </p>
     </router-link>
-  </div>
+  </header>
 </template>
 
 <script language="ts">

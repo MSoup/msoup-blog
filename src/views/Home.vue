@@ -6,40 +6,24 @@
     <BlogHeader v-if="!section" class="mb-5" />
 
     <hr v-if="!section">
-    <p
-      v-if="section"
-      class="text-center display-4 text-capitalize my-5"
-    >
+    <p v-if="section" class="text-center display-4 text-capitalize my-5">
       [ {{ section }} ]
     </p>
 
-    <div
-      v-for="entry in pageStatus.visiblePosts"
-      :key="entry.id"
-      class="container markdown-body p-3 p-md-4"
-    >
+    <!-- Loop through posts -->
+    <div v-for="entry in pageStatus.visiblePosts" :key="entry.id" class="container markdown-body p-3 p-md-4">
       <!-- TITLE -->
-      <router-link
-        :to="`/${entry.section}/${entry.id}`"
-        class="text-reset"
-      >
+      <router-link :to="`/${entry.section}/${entry.id}`" class="text-reset">
         <h3 class="text-left m-0 p-0">
           {{ entry.title }}
         </h3>
       </router-link>
 
       <!-- POST DETAILS -->
-      <p
-        class="font-weight-light font-italic m-0 p-0"
-        :class="!section ? 'text-right':'mb-3'"
-      >
+      <p class="font-weight-light font-italic m-0 p-0" :class="!section ? 'text-right' : 'mb-3'">
         {{ entry.date }}
       </p>
-      <router-link
-        v-if="!section"
-        :to="`/${entry.section}`"
-        class="text-reset"
-      >
+      <router-link v-if="!section" :to="`/${entry.section}`" class="text-reset">
         <h6 class="m-0 p-0 text-right font-weight-bold">
           #{{ entry.section }}
         </h6>
@@ -52,32 +36,18 @@
     </div>
 
     <!-- PAGINATION -->
-    <ul
-      v-if="pageStatus.endPage > pageStatus.startPage"
-      class="pagination justify-content-center mb-5 pb-5"
-      style="cursor: pointer;"
-    >
-      <li
-        class="page-item"
-        :class="currentPage == pageStatus.startPage ? 'active':''"
-        @click="currentPage = pageStatus.startPage"
-      >
+    <ul v-if="pageStatus.endPage > pageStatus.startPage" class="pagination justify-content-center mb-5 pb-5"
+      style="cursor: pointer;">
+      <li class="page-item" :class="currentPage == pageStatus.startPage ? 'active' : ''"
+        @click="currentPage = pageStatus.startPage">
         <a class="page-link"> {{ pageStatus.startPage }}</a>
       </li>
-      <li
-        v-for="(page, index) in pageStatus.midPages"
-        :key="index"
-        class="page-item"
-        :class="currentPage == page ? 'active':''"
-        @click="currentPage = page"
-      >
+      <li v-for="(page, index) in pageStatus.midPages" :key="index" class="page-item"
+        :class="currentPage == page ? 'active' : ''" @click="currentPage = page">
         <a class="page-link">{{ page }}</a>
       </li>
-      <li
-        class="page-item"
-        :class="currentPage == pageStatus.endPage ? 'active':''"
-        @click="currentPage = pageStatus.endPage"
-      >
+      <li class="page-item" :class="currentPage == pageStatus.endPage ? 'active' : ''"
+        @click="currentPage = pageStatus.endPage">
         <a class="page-link">{{ pageStatus.endPage }}</a>
       </li>
     </ul>
@@ -105,7 +75,7 @@ export default defineComponent({
       default: ''
     }
   },
-  setup (props) {
+  setup(props) {
     const postsIndex: PostIndex[] = inject<PostIndex[]>('postsIndex', [])
     const state = reactive({
       currentPage: 1
