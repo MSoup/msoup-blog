@@ -1,6 +1,6 @@
 {
   "name": "msoup-blog",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "MSoup's Blog based on Minimal Vue3 + Markdown blog engine",
   "author": "MSoup (https://github.com/MSoup/msoup-blog)",
   "keywords": [
@@ -27,7 +27,7 @@
     "generate:index": "npx ts-node ./scripts/generate_index.ts",
     "prepare": "husky install",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
-    "format": "prettier .  --write"  
+    "format": "prettier .  --write"
   },
   "dependencies": {
     "bootstrap": "^4.5.3",
