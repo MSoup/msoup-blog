@@ -1,12 +1,13 @@
 <template>
   <nav class="navbar navbar-expand-md navbar-light mb-0"
     :style="`background-color: ${VUE_APP_NAVBAR_BG_CSS_COLOR}; color: ${VUE_APP_NAVBAR_TEXT_CSS_COLOR};`">
-    <router-link class="navbar-brand" :to="'/'" :style="`color: ${VUE_APP_NAVBAR_TEXT_CSS_COLOR};`">
+    <router-link @click.stop="collapseMenu = !collapseMenu" class="navbar-brand" :to="'/'"
+      :style="`color: ${VUE_APP_NAVBAR_TEXT_CSS_COLOR};`">
       {{ title }}
     </router-link>
     <button :class="`navbar-toggler ${collapseMenu ? 'collapsed' : ''}`" type="button" data-toggle="collapse"
       data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" :aria-expanded="!collapseMenu"
-      aria-label="Toggle navigation" @click="collapseMenu = !collapseMenu">
+      aria-label="Toggle navigation" @click.stop="collapseMenu = !collapseMenu">
       <span class="navbar-toggler-icon" :style="`background-color: ${VUE_APP_NAVBAR_TEXT_CSS_COLOR};`" />
     </button>
 
@@ -60,10 +61,11 @@ export default defineComponent({
   setup() {
     const dropdown = {
       active: ref(false),
-      close: () => {
+      close: (e) => {
         dropdown.active.value = false
       }
     }
+
 
     onBeforeUnmount(() => {
       document.removeEventListener('click', dropdown.close)
@@ -75,7 +77,6 @@ export default defineComponent({
 
     const showDropdown = ref(false);
     const collapseMenu = ref(true);
-
     return {
       dropdown,
       showDropdown,
